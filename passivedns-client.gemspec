@@ -21,8 +21,8 @@ Gem::Specification.new do |spec|
 	spec.add_runtime_dependency 'json'
 	spec.add_runtime_dependency 'sqlite3'
 	spec.add_runtime_dependency 'structformatter'
-  spec.add_runtime_dependency 'configparser'
-  spec.add_development_dependency "minitest"
+	spec.add_runtime_dependency 'configparser'
+	spec.add_development_dependency "minitest"
 	spec.add_development_dependency "bundler"
 	spec.add_development_dependency "rake"
 
