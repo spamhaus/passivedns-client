@@ -4,6 +4,7 @@ This rubygem queries the following Passive DNS databases:
 
 * BFK.de
 * CIRCL
+* Deteque (Spamhaus)
 * DNSDB (FarSight)
 * Mnemonic
 * PassiveDNS.cn (Qihoo 360 Technology Co.,Ltd)
@@ -40,6 +41,9 @@ From version 2.0.0 on, all configuration keys for passive DNS providers are in o
 
 	[dnsdb]
 	APIKEY = 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+	[deteque]
+	USERNAME = username@domain
+	PASSWORD = changeme
 	[cn360]
 	API = http://some.web.address.for.their.api
 	API_ID = a username that is given when you register
@@ -69,6 +73,7 @@ CIRCL also can use and authorization token.  In that case, you should drop the U
 * 360.cn : http://www.passivedns.cn
 * BFK.de : No registration required, but please, please ready their usage policy at http://www.bfk.de/bfk_dnslogger.html
 * CIRCL : https://www.circl.lu/services/passive-dns/
+* Deteque: (Deteque Spamhaus) : https://pdns.deteque.com/
 * DNSDB (Farsight Security) : https://api.dnsdb.info/
 * Mnemonic : mss .at. mnemonic.no
 * PassiveTotal : https://www.passivetotal.org
@@ -91,6 +96,7 @@ Or use the included tool...
 	  -d3 use 360.cn
 	  -db use BFK.de
 	  -dc use CIRCL
+	  -dq use Deteque/Spamhaus
 	  -dd use DNSDB
 	  -dm use Mnemonic
 	  -dp use PassiveTotal
